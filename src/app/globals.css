@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --background: #1b1a1afa;
+    --foreground: #ffffff;
+    font-family: 'vazir';
+    src: url('/fonts/Vazir.woff2') format('woff2'), url('/fonts/Vazir.woff') format('woff');
+    direction: rtl;
+    text-align: right;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-family: 'Vazir', Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+}
